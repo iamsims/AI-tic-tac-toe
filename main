@@ -18,7 +18,7 @@ class Board:
         print(4, '|', 5, '|', 6)
         print(7, '|', 8, '|', 9)
         print('\n')
-        print('You can choose a number mainfile the given matrix to place your key')
+        print('You can choose a number in the given matrix to place your key')
         print('\n')
 
 
@@ -90,7 +90,7 @@ class Board:
         if not player==self.COMP:
             while True:                                          #exception handling block
                 try:
-                    chosen_spot = input('choose your your spot')
+                    chosen_spot = input('choose your spot')
                     val = int(chosen_spot)
                 except ValueError:
                     print("That's not an int!")
